@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- index.html -->
+
+<!-- Header section -->
+<header>
+    <h1>Messenger</h1>
+    <button id="new-chat-btn">New Chat</button>
+</header>
+
+<!-- Chat list section -->
+<section class="chat-list">
+    <ul id="chat-list-ul">
+        <!-- Chat list will be generated here -->
+    </ul>
+</section>
+
+<!-- Chat area section -->
+<section class="chat-area">
+    <div class="chat-header">
+        <h2 id="chat-title">Select a chat</h2>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+        <!-- Chat messages will be displayed here -->
+    </div>
+    <input type="text" id="message-input" placeholder="Type a message...">
+    <button id="send-btn">Send</button>
+</section>
+
+<!-- New chat modal -->
+<div class="new-chat-modal hidden">
+    <h2>New Chat</h2>
+    <input type="text" id="new-chat-input" placeholder="Enter username or chat name">
+    <button id="create-chat-btn">Create Chat</button>
+</div>
+
+<script src="script.js"></script>
+<script src="server.js"></script>
+</body>
+</html>
